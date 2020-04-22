@@ -1,4 +1,4 @@
-﻿FROM ubuntu:18.04
+FROM ubuntu:18.04
 
 RUN mkdir /home/work
 WORKDIR /home/work
@@ -22,4 +22,6 @@ RUN apt-get install -y tzdata && apt-get install -y libopencv-dev
 RUN npm install -y opencv
 
 RUN mkdir detected && mkdir upload
+
+CMD [ "node", "/home/work/zMEC_face/app.js" ]
 
