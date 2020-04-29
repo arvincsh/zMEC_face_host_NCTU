@@ -11,7 +11,7 @@ RUN apt install -y nodejs
 
 RUN git clone https://github.com/arvincsh/zMEC_face_host.git
 
-WORKDIR /home/work/zMEC_face
+WORKDIR /home/work/zMEC_face_host
 
 RUN npm install -y express && npm install -y body-parser && npm install -y formidable && npm install -y fs && npm install -y path && npm install -y ejs
 
@@ -23,5 +23,5 @@ RUN npm install -y opencv
 
 RUN mkdir detected && mkdir upload
 
-CMD [ "node", "/home/work/zMEC_face/app.js" ]
+CMD [ "node", "/home/work/zMEC_face_host/app.js" ]
 
