@@ -9,7 +9,7 @@ RUN curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 
 RUN apt install -y nodejs
 
-RUN git clone https://github.com/arvincsh/zMEC_face.git
+RUN git clone https://github.com/arvincsh/zMEC_face_host.git
 
 WORKDIR /home/work/zMEC_face
 
