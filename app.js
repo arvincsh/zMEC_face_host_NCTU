@@ -13,7 +13,7 @@ app.use(express.static(__dirname + "/upload"));
 
 app.set('view engine', 'ejs');
 
-app.post('/face', function (req, res) {
+app.post('/NCTUface', function (req, res) {
   console.log('face detection now');
   var form = new formidable.IncomingForm();
   var returnData = "";
@@ -54,6 +54,6 @@ app.post('/face', function (req, res) {
       })
 })
 
-app.listen(4000, function () {
-  console.log('app listening on port 4000')
+app.listen(5000, function () {
+  console.log('app listening on port 5000')
 })
