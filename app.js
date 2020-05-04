@@ -14,7 +14,7 @@ app.use(express.static(__dirname + "/upload"));
 app.set('view engine', 'ejs');
 
 app.post('/NCTUface', function (req, res) {
-  console.log('face detection now');
+  //console.log('face detection now');
   var form = new formidable.IncomingForm();
   var returnData = "";
   //form.encoding = 'utf-8';
