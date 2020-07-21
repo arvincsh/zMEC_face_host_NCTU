@@ -54,6 +54,6 @@ app.post('/NCTUface', function (req, res) {
       })
 })
 
-app.listen(5000, function () {
+app.listen(4000, function () {
   console.log('app listening on port 5000')
 })
