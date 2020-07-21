@@ -15,6 +15,8 @@ WORKDIR /home/work/zMEC_face_host_NCTU
 
 ENV DEBIAN_FRONTEND=noninteractive
 
+RUN apt-get update -y
+
 RUN apt-get install -y tzdata && apt-get install -y libopencv-dev
 
 RUN npm install -y opencv
@@ -23,5 +25,6 @@ RUN npm install -y express && npm install -y body-parser && npm install -y formi
 
 RUN mkdir detected && mkdir upload
 
-CMD [ "node", "/home/work/zMEC_face_host_NCTU/app.js" ]
+RUN npm install forever -g
 
+CMD [ "forever", "app.js" ]
