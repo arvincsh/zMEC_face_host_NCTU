@@ -1,5 +1,5 @@
 {
-  "name": "zmec_face_host",
+  "name": "zmec_face_host_NCTU",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arvincsh/zMEC_face_host.git"
+    "url": "git+https://github.com/arvincsh/zMEC_face_host_NCTU.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/arvincsh/zMEC_face_host/issues"
+    "url": "https://github.com/arvincsh/zMEC_face_host_NCTU/issues"
   },
-  "homepage": "https://github.com/arvincsh/zMEC_face_host#readme",
+  "homepage": "https://github.com/arvincsh/zMEC_face_host_NCTU#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "ejs": "^3.1.3",
